@@ -1,0 +1,21 @@
+{
+  "name": "depression-help-call",
+  "version": "1.0.0",
+  "description": "An express server to call a patient via Twilio if Depression Risk is high",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dhalev/depression_detector"
+  },
+  "keywords": [
+    "twilio",
+    "express",
+    "depression"
+  ],
+  "license": "MIT",
+  "homepage": "http://devpost.com/software/depression-predictor",
+  "dependencies": {
+    "express": "*",
+    "twilio": "^2.9.1"
+  }
+}

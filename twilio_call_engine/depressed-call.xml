@@ -1,0 +1,31 @@
+
+<Response>
+        <Pause length="3"/>
+        <Gather timeout="10" finishOnKey="1">
+        <Say voice="alice">Hi Markus. I was just wondering how you feel. Do you have a few minutes to talk about yourself? Please press 1 for yes or 2 for no.</Say>
+        </Gather>
+        <Say voice="alice">I will now ask you a couple of questions. Don't hesitate to answer. Just say what's on your mind.</Say>
+        <Pause length="1"/>
+        <Gather timeout="10" finishOnKey="1">
+        <Say voice="alice">Do you often have difficulties falling asleep at night? Or do you have nightmares, tossing or frequent waking?</Say>
+        <Pause length="1"/>
+        </Gather>
+        <Gather timeout="10" finishOnKey="#" action="/process_gather.php" method="GET">
+        <Say voice="alice">Do you feel tired during the day regulary?</Say>
+        <Pause length="1"/>
+        </Gather>
+        <Gather timeout="10" finishOnKey="1">
+        <Say voice="alice">Do you often feel that life is not worth living?</Say>
+        <Pause length="1"/>
+        </Gather>
+        <Gather timeout="10" finishOnKey="1">
+        <Say voice="alice">Do you think that sadness and disappointment are a regular part of life, and that "happy" people are only deceiving themselves?</Say>
+        <Pause length="1"/>
+        </Gather>
+        <Gather timeout="10" finishOnKey="1">
+        <Say voice="alice">Do you try to avoid dealing with other people?</Say>
+        </Gather>
+        <Pause length="1"/>
+        <Say voice="alice">Thank you for your time and honesty Markus. May I redirect you to a human colleague of mine? He will listen and also give you some advice if you like.</Say>
+        <Pause length="1"/>
+</Response>
